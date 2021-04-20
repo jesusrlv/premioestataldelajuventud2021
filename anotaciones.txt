@@ -1,0 +1,52 @@
+--- ANOTACIONES PEJ 2021 ---
+
+- Un solo lugar para subir datos personales
+- Listado de las categorías del premio, agregarlas en el mismo campo de datos personales
+- Hacer el cálculo de la edad para dejar pasar o no al postulante
+- Envío de correo al postulante con sus datos
+LISTO - Revisores, crear interfaz
+- Agregar a CURP un ícono de llave en formulario de registro
+LISTO - Acomodo de BD para PEJ totalmente
+
+
+- en el archivo qwery_validacion_dashboard.php se va a cambiar la validación hacia la tabla de validaciones en la BD
+- 
+
+13/03/2021
+
+LISTO - En campo de datos, sean: nombre, edad, municipio, grado escolar y teléfono.
+- Son 13 categorías del premio.
+- Un aviso SWAL antes de registrar la categoría.
+LISTO - Capacidad de documentos ilimitada.
+LISTO - Video, que sea en YouTube.
+- Tutoriales de uso del sistema en todos los perfiles.
+- Infografías de uso de los perfiles.
+- Correo de recordatorio cada 15 días después de crear el perfil sobre el expediente
+- En las notas del video, agregar que sea de un minuto máximo.
+LISTO- Poder editar documentos, pero cuando se cierre la convocatoria, ya no pueda realizarlo.
+- Cuando se termine de realizar la validación, enviar un correo con un código de respaldo.
+- Validar solo los expedientes completos que se muestre a los jurados.
+LISTO- NO VALIDACIÖN POR ADMIN.
+LISTO- NO ELIMINAR USR POR ADMIN.
+- En el ADMIN y en JUR se vean las calificaciones: por documentos, promedio por participante y listado de todos los participantes.
+
+Para el perfil de notario.
+
+- Todas las calificaciones de los jurados.
+- Ver las calificaciones de los documentos.
+- Similar a la vista de jurado pero con todas las categorías (NOMBRE DEL PARTICIPANTE, CALIFICACIÓN Y QUIÉN LO CALIFICÓ.
+
+Reportes.
+
+- Se genera en excel.
+- Reporte postulante: con los campos que llenó y la lista de documentos cargados.
+
+
+PARA ENCONTRAR ERRORES EN QUERY PHP
+
+$query="UPDATE  student SET class='Five'";
+if ($connection->query($query)) {
+echo "Records Updated";
+}else{
+echo $connection->error;
+}
